@@ -20,13 +20,11 @@ public class MainActivity extends AppCompatActivity {
         mReceiver = new MyReceiver2();
         mFilter = new IntentFilter(Intent.ACTION_HEADSET_PLUG);
     }
-
     @Override
-    protected void onStart() {
+    protected void onStart() { //무언가 행위가 있을 때 Start가 된다. 행위를 이벤트로 감지함.
         super.onStart();
         registerReceiver(mReceiver, mFilter);
     }
-
     @Override
     protected void onStop() {
         super.onStop();

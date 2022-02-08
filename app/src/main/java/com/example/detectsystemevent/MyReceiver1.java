@@ -14,8 +14,7 @@ public class MyReceiver1 extends BroadcastReceiver {
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
             Toast.makeText(context, "ACTION_BOOT_COMPLETED", Toast.LENGTH_SHORT).show();
         } else if (intent.getAction().equals(Intent.ACTION_TIMEZONE_CHANGED)) {
-            Toast.makeText(context, "ACTION_TIMEZONE_CHANGED",
-                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "ACTION_TIMEZONE_CHANGED", Toast.LENGTH_SHORT).show();
         }
     }
 }
